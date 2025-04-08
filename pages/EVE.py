@@ -46,19 +46,19 @@ with st.sidebar:
 
     with st.expander("📘 Risque de liquidité"):
         if st.button("💧 LCR"):
-            st.switch_page("pages/LCR.py")
+            st.switch_page("LCR")
         if st.button("🏦 NSFR"):
-            st.switch_page("pages/NSFR.py")
+            st.switch_page("NSFR")
 
     with st.expander("📙 Risque de taux"):
         if st.button("📈 EVE"):
-            st.switch_page("pages/EVE.py")
+            st.switch_page("EVE")
         if st.button("📊 MNI"):
-            st.switch_page("pages/MNI.py")
+            st.switch_page("MNI")
 
     with st.expander("📗 Risque de change"):
         if st.button("💱 Risque de change"):
-            st.switch_page("pages/RISQUE_DE_CHANGE.py")
+            st.switch_page("RISQUE_DE_CHANGE")
 
 st.title("📊 Calculateur d'EVE (Economic Value of Equity)")
 
