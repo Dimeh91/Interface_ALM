@@ -22,19 +22,19 @@ with st.sidebar:
 
     with st.expander("📘 Risque de liquidité"):
         if st.button("💧 LCR"):
-            st.switch_page("LCR")
+            st.switch_page("pages/LCR.py")
         if st.button("🏦 NSFR"):
-            st.switch_page("NSFR")
+            st.switch_page("pages/NSFR.py")
 
     with st.expander("📙 Risque de taux"):
         if st.button("📈 EVE"):
-            st.switch_page("EVE")
+            st.switch_page("pages/EVE.py")
         if st.button("📊 MNI"):
-            st.switch_page("MNI")  
+            st.switch_page("pages/MNI.py")  
 
     with st.expander("📗 Risque de change"):
         if st.button("💱 Risque de change"):
-            st.switch_page("RISQUE_DE_CHANGE")
+            st.switch_page("pages/RISQUE_DE_CHANGE.py")
 
 # 🖼️ Titre et logo
 col_title, col_logo = st.columns([8, 1])
@@ -67,12 +67,12 @@ Utilisez la barre latérale pour naviguer entre les différents modules :
 st.markdown("## 🚀 Accès rapide aux modules")
 col1, col2 = st.columns(2)
 with col1:
-    st.page_link("lcr", label="📊 LCR")
-    st.page_link("eve", label="📈 EVE")
-    st.page_link("mni", label="📊 MNI")
+    st.page_link("LCR", label="📊 LCR")
+    st.page_link("EVE", label="📈 EVE")
+    st.page_link("MNI", label="📊 MNI")
 with col2:
-    st.page_link("nsfr", label="🏦 NSFR")
-    st.page_link("risque_de_change", label="💱 Risque de change")
+    st.page_link("NSFR", label="🏦 NSFR")
+    st.page_link("RISQUE_DE_CHANGE", label="💱 Risque de change")
 
 # ❓ Expander ALM
 with st.expander("❓ Qu’est-ce que l’ALM ?"):
