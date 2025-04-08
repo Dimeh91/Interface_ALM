@@ -38,7 +38,7 @@ with st.sidebar:
     """, unsafe_allow_html=True)
 
     if st.button("🏠 Accueil", key="accueil", help="Revenir à l'accueil"):
-        st.switch_page("ACCUEIL.py")
+        st.switch_page("streamlit_app.py")
 
     st.title("📁 Navigation")
 
