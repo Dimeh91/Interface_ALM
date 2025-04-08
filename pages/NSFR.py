@@ -41,7 +41,7 @@ with st.sidebar:
             accueil_col = st.columns([1])[0]
             with accueil_col:
                 if st.button("🏠 Accueil", key="accueil", help="Revenir à l'accueil"):
-                    st.switch_page("ACCUEIL.py")  
+                    st.switch_page("streamlit_app.py")  
 
     st.title("📁 Navigation")
 
